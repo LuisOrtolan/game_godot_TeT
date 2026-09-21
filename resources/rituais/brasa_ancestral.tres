@@ -13,4 +13,5 @@ requisito = "Chama ou brasas por perto"
 dano_dado = "1d6"
 atributo_salvamento = "DES"
 efeito_salvamento = "Salvamento Físico reduz o dano à metade"
-custo_canalizacao = 1
+salvamento_reduz_metade = true
+custo_canalizacao = 3

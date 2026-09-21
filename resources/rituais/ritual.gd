@@ -21,8 +21,9 @@ class_name Ritual
 @export_group("Salvamento")
 @export var atributo_salvamento: String = ""  # "CON", "DES", "VON" ou "" (nenhum)
 @export var efeito_salvamento: String = ""
+@export var salvamento_reduz_metade: bool = false  # true = passar no salvamento reduz o dano à metade (senão anula)
 
 @export_group("Controle")
 @export var imobiliza: bool = false
 
-@export var custo_canalizacao: int = 1
+@export var custo_canalizacao: int = 1  # quanto do pool de canalização (mana) o ritual gasta
