@@ -29,7 +29,7 @@ Desenvolvedor backend (AdvPL/TLPP, Protheus), iniciante em Godot, GDScript e gam
 3. UI funcional, ainda com placeholder
 4. Arte só entra por último: retratos estáticos gerados por IA (sem animação de sprite) + asset pack pronto pra UI genérica
    - Retratos: originais em `arte/retratos/` (2000px, ignorados pelo Godot via `arte/.gdignore`); o jogo usa as cópias 512px de `assets/retratos/`, geradas por `tools/redimensionar_retratos.gd`. Cada `Personagem`/`Inimigo` aponta pro seu retrato no campo `retrato` do `.tres`.
-   - Asset pack de UI: ainda pendente (decisão de qual pack usar, checando licença).
+   - Asset pack de UI: adiado por decisão. O MVP usa o tema padrão do Godot; se algum dia entrar um pack (ex: Kenney, CC0), é via `Theme`, sem mexer na lógica.
 
 ## Princípio geral
 Lógica e diversão do combate vêm antes de qualquer polimento visual. Se o passo 2 mostrar que o loop não é divertido, isso precisa ser resolvido antes de seguir pro resto — é mais barato descobrir isso cedo.
