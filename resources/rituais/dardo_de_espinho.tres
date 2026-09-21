@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Ritual" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/rituais/ritual.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+nome = "Dardo de Espinho"
+elemento = "Terra"
+grandeza = 1
+descricao_alvo = "60 pés / 1 criatura"
+efeito = "Cravo de espinhos envenenados: 1d4 de dano agora e mais 1d4 no turno seguinte"
+requisito = "Espinhos ou galhos rígidos por perto"
+dano_dado = "1d4"
+dano_secundario_dado = "1d4"
+atributo_salvamento = "CON"
+efeito_salvamento = "Salvamento Físico evita o dano"
+custo_canalizacao = 1

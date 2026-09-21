@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Inimigo" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/inimigos/inimigo.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+nome = "Cão"
+dados_de_vida = "1"
+pv_maximo = 4
+pv_atual = 4
+ca = 12
+bonus_ataque = 1
+nome_ataque = "Mordida"
+dano_ataque = "1d4"
+salvamento_fisico = 15
+salvamento_mental = 16
+movimento = 60
+moral = 6
+especial = "Faro aguçado"

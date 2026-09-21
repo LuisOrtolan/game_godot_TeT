@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Ritual" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/rituais/ritual.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+nome = "Correia de Vinha"
+elemento = "Terra"
+grandeza = 1
+descricao_alvo = "30 pés / 1 criatura até Grande"
+efeito = "Vinhas brotam do chão: 1d4 de dano e prende o alvo"
+requisito = "Plantas ou solo fértil por perto"
+dano_dado = "1d4"
+atributo_salvamento = "DES"
+efeito_salvamento = "Salvamento Físico evita dano e prisão (alvos Grandes têm +2)"
+imobiliza = true
+custo_canalizacao = 1

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Personagem" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://resources/personagens/personagem.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/rituais/dardo_de_espinho.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/rituais/correia_de_vinha.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/rituais/brasa_ancestral.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/rituais/seiva_restauradora.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+nome = "Xamã de Teste"
+trilha = "Xamã"
+nivel = 1
+pv_maximo = 5
+pv_atual = 5
+ca = 13
+bonus_ataque = 0
+arma_nome = "Cajado"
+dano_arma = "1d4"
+forca = 10
+destreza = 14
+constituicao = 12
+inteligencia = 13
+vontade = 15
+carisma = 11
+salvamento_fisico = 16
+salvamento_mental = 16
+canalizacao_maxima = 2
+canalizacao_atual = 2
+rituais = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]

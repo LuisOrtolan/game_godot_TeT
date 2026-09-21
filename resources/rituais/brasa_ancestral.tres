@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Ritual" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/rituais/ritual.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+nome = "Brasa Ancestral"
+elemento = "Fogo"
+grandeza = 1
+descricao_alvo = "40 pés / 1 criatura ou objeto"
+efeito = "Bola de brasa: 1d6 de dano de fogo, acende objetos secos"
+requisito = "Chama ou brasas por perto"
+dano_dado = "1d6"
+atributo_salvamento = "DES"
+efeito_salvamento = "Salvamento Físico reduz o dano à metade"
+custo_canalizacao = 1

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ritual" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/rituais/ritual.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+nome = "Seiva Restauradora"
+elemento = "Terra"
+grandeza = 1
+descricao_alvo = "Toque / 1 criatura"
+efeito = "Seiva curativa flui pro alvo: cura 1d6 de PV"
+requisito = "Nenhum"
+cura_dado = "1d6"
+custo_canalizacao = 1
