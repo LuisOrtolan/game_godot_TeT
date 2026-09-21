@@ -14,4 +14,4 @@ dano_dado = "1d4"
 dano_secundario_dado = "1d4"
 atributo_salvamento = "CON"
 efeito_salvamento = "Salvamento Físico evita o dano"
-custo_canalizacao = 1
+custo_canalizacao = 2

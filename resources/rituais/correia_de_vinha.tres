@@ -14,4 +14,4 @@ dano_dado = "1d4"
 atributo_salvamento = "DES"
 efeito_salvamento = "Salvamento Físico evita dano e prisão (alvos Grandes têm +2)"
 imobiliza = true
-custo_canalizacao = 1
+custo_canalizacao = 3

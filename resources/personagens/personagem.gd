@@ -3,7 +3,8 @@ class_name Personagem
 
 ## Ficha de um personagem jogável (trilha), reduzida ao que o combate do MVP precisa.
 ## Atributos e salvamentos seguem o SRD de Trilhas & Tesouros; canalização é
-## simplificada pro MVP: um pool fixo de usos por combate, sem depleção aleatória.
+## simplificada pro MVP: um pool de pontos (mana) por combate, onde cada ritual
+## gasta `custo_canalizacao`, sem depleção aleatória.
 
 @export var nome: String = ""
 @export var trilha: String = ""
@@ -32,8 +33,8 @@ class_name Personagem
 @export var salvamento_mental: int = 16
 
 @export_group("Canalização")
-@export var canalizacao_maxima: int = 2
-@export var canalizacao_atual: int = 2
+@export var canalizacao_maxima: int = 10
+@export var canalizacao_atual: int = 10
 
 @export_group("Rituais")
 @export var rituais: Array[Ritual] = []

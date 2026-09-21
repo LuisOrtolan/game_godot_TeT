@@ -36,6 +36,6 @@ Lógica e diversão do combate vêm antes de qualquer polimento visual. Se o pas
 Fonte: SRD de Trilhas & Tesouros (trilha Xamã) + Bestiário.
 
 - **Personagem de teste**: Xamã nível 1, `resources/personagens/xama_teste.tres`. PV e atributos são valores de teste escolhidos pra rodar o MVP (o SRD só dá a fórmula de geração, não valores fixos) — ajustar livremente.
-- **Rituais** (4 de 1ª grandeza, todos com custo de 1 uso de Canalização): Dardo de Espinho, Correia de Vinha, Brasa Ancestral, Seiva Restauradora. Em `resources/rituais/`.
+- **Rituais** (4 de 1ª grandeza, custo em pontos de Canalização, ver abaixo): Dardo de Espinho, Correia de Vinha, Brasa Ancestral, Seiva Restauradora. Em `resources/rituais/`.
 - **Inimigo de teste**: Cão (`resources/inimigos/cao.tres`), escolhido em vez do Lobo do Bestiário porque com o PV baixo do Xamã de teste o Lobo vencia o combate rápido demais pra validar o loop.
-- **Canalização simplificada pro MVP**: pool fixo de 2 usos por combate (`canalizacao_maxima`/`canalizacao_atual` em `Personagem`), sem a depleção aleatória de dados nem a tabela de Fúria dos Espíritos do SRD completo. Se o motor provar que vale a pena, portar a versão completa é uma decisão separada.
+- **Canalização simplificada pro MVP**: pool de mana por combate (`canalizacao_maxima`/`canalizacao_atual` em `Personagem`, 10 no Xamã de teste), onde cada ritual gasta `custo_canalizacao` (Dardo 2, Seiva 2, Correia 3, Brasa 3). Antes era 1 uso por ritual num pool de 2, mas o Xamã ficava sem canalização na rodada 2 e só repetia ataque de cajado. Sem a depleção aleatória de dados nem a tabela de Fúria dos Espíritos do SRD completo. Se o motor provar que vale a pena, portar a versão completa é uma decisão separada.
