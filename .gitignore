@@ -2,7 +2,13 @@
 .godot/
 .import/
 export.cfg
-export_presets.cfg
+
+# export_presets.cfg é versionado de propósito: não tem segredo (só preset
+# Web, sem keystore/assinatura), e precisa existir pro export headless
+# funcionar sem abrir o editor gráfico.
+
+# Build exportado (gerado a cada export, não precisa versionar)
+build/
 
 # Imported translations (automatically generated from CSV files)
 *.translation
