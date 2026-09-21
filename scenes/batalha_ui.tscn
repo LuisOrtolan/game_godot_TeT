@@ -50,10 +50,12 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="RetratoInimigo" type="ColorRect" parent="Margem/Coluna/PainelInimigo/Linha"]
-custom_minimum_size = Vector2(88, 88)
+[node name="RetratoInimigo" type="TextureRect" parent="Margem/Coluna/PainelInimigo/Linha"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(96, 96)
 layout_mode = 2
-color = Color(0.75, 0.25, 0.25, 1)
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Info" type="VBoxContainer" parent="Margem/Coluna/PainelInimigo/Linha"]
 layout_mode = 2
@@ -85,10 +87,12 @@ layout_mode = 2
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="RetratoJogador" type="ColorRect" parent="Margem/Coluna/PainelJogador/Linha"]
-custom_minimum_size = Vector2(88, 88)
+[node name="RetratoJogador" type="TextureRect" parent="Margem/Coluna/PainelJogador/Linha"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(96, 96)
 layout_mode = 2
-color = Color(0.3, 0.65, 0.35, 1)
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Info" type="VBoxContainer" parent="Margem/Coluna/PainelJogador/Linha"]
 layout_mode = 2

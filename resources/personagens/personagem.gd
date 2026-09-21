@@ -8,6 +8,7 @@ class_name Personagem
 
 @export var nome: String = ""
 @export var trilha: String = ""
+@export var retrato: Texture2D  # arte estática de UI (assets/retratos/)
 @export var nivel: int = 1
 
 @export_group("Pontos de Vida")

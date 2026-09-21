@@ -1,15 +1,17 @@
-[gd_resource type="Resource" script_class="Personagem" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="Personagem" load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://resources/personagens/personagem.gd" id="1"]
 [ext_resource type="Resource" path="res://resources/rituais/dardo_de_espinho.tres" id="2"]
 [ext_resource type="Resource" path="res://resources/rituais/correia_de_vinha.tres" id="3"]
 [ext_resource type="Resource" path="res://resources/rituais/brasa_ancestral.tres" id="4"]
 [ext_resource type="Resource" path="res://resources/rituais/seiva_restauradora.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/retratos/xama_teste.jpg" id="6"]
 
 [resource]
 script = ExtResource("1")
 nome = "Xamã de Teste"
 trilha = "Xamã"
+retrato = ExtResource("6")
 nivel = 1
 pv_maximo = 5
 pv_atual = 5

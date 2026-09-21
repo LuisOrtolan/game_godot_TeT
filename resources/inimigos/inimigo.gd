@@ -4,6 +4,7 @@ class_name Inimigo
 ## Ficha de um inimigo, no formato reduzido do Bestiário (HD, CA, ataque, moral).
 
 @export var nome: String = ""
+@export var retrato: Texture2D  # arte estática de UI (assets/retratos/)
 @export var dados_de_vida: String = "1"
 
 @export_group("Pontos de Vida")

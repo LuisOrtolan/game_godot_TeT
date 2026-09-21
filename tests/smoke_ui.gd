@@ -107,6 +107,12 @@ func _jogar_uma(cena: PackedScene, n: int) -> bool:
 		_falhar(n, "barra de PV do inimigo (%d) != estado (%d)" % [barra_inimigo.value, batalha.inimigo.pv_atual])
 	if int(barra_mana.value) != batalha.jogador.canalizacao_atual:
 		_falhar(n, "barra de canalização (%d) != estado (%d)" % [barra_mana.value, batalha.jogador.canalizacao_atual])
+	for nome_no in ["%RetratoJogador", "%RetratoInimigo"]:
+		var retrato: TextureRect = ui.get_node(nome_no)
+		if retrato.texture == null:
+			_falhar(n, "%s sem textura (falta `retrato` no .tres?)" % nome_no)
+		elif retrato.texture.get_width() > 1024:
+			_falhar(n, "%s com %dpx: use a cópia redimensionada de assets/retratos/" % [nome_no, retrato.texture.get_width()])
 	if (ui.get_node("%Log") as RichTextLabel).get_parsed_text().strip_edges().is_empty():
 		_falhar(n, "log vazio")
 

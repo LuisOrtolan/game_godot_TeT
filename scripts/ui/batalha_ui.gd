@@ -17,9 +17,11 @@ var _botoes: Array[Button] = []
 var _pausar: bool = false  # true = a última etapa resolveu uma ação (vale a pausa)
 
 @onready var _indicador_turno: Label = %IndicadorTurno
+@onready var _retrato_inimigo: TextureRect = %RetratoInimigo
 @onready var _nome_inimigo: Label = %NomeInimigo
 @onready var _barra_pv_inimigo: ProgressBar = %BarraPVInimigo
 @onready var _texto_pv_inimigo: Label = %TextoPVInimigo
+@onready var _retrato_jogador: TextureRect = %RetratoJogador
 @onready var _nome_jogador: Label = %NomeJogador
 @onready var _barra_pv_jogador: ProgressBar = %BarraPVJogador
 @onready var _texto_pv_jogador: Label = %TextoPVJogador
@@ -41,6 +43,8 @@ func _ready() -> void:
 	batalha.batalha_terminada.connect(_ao_terminar)
 	_botao_reiniciar.pressed.connect(func() -> void: get_tree().reload_current_scene())
 
+	_retrato_jogador.texture = batalha.jogador.retrato
+	_retrato_inimigo.texture = batalha.inimigo.retrato
 	_nome_jogador.text = batalha.jogador.nome
 	_nome_inimigo.text = batalha.inimigo.nome
 	_montar_menu()
